@@ -1,0 +1,3 @@
+Gold spike feature is:
+gravity changes as you walk around to always point towards the ground.
+when you jump, it continues pointing normal to the last surface you touched

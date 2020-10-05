@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Rigidbody2D rigid;
+    bool moveForward = false;
+
+    public float moveForce = 5f;
+    public float maxSpeed = 5f;
+
     void Start()
     {
-        
+        rigid = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        moveForward = Input.GetButton("Forward");
+    }
+
+    private void FixedUpdate()
+    {
+        if (moveForward)
+        {
+            rigid.AddForce(moveForce * transform.right);
+        }
+
+        if (rigid.velocity.magnitude >= maxSpeed)
+        {
+            rigid.velocity = rigid.velocity.normalized * maxSpeed;
+        }
     }
 }
