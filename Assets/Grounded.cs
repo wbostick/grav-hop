@@ -6,7 +6,8 @@ public class Grounded : MonoBehaviour
 {
     float gravityStrength;
     Rigidbody2D rigid;
-    public Transform groundCheckEndpoint;
+    public Transform gravityCheckEndpoint;
+    public Transform jumpCheckEndpoint;
 
     private void Awake()
     {
@@ -21,7 +22,7 @@ public class Grounded : MonoBehaviour
 
     bool RotateIfOnGround()
     {
-        RaycastHit2D hit = GetGround();
+        RaycastHit2D hit = GetGround(gravityCheckEndpoint);
         if (hit.collider)
         {
             Physics2D.gravity = -hit.normal.normalized * gravityStrength;
@@ -35,10 +36,10 @@ public class Grounded : MonoBehaviour
 
     }
 
-    RaycastHit2D GetGround()
+    public RaycastHit2D GetGround(Transform endpoint)
     {
         RaycastHit2D[] results = new RaycastHit2D[2];
-        Vector2 direction = groundCheckEndpoint.position - transform.position;
+        Vector2 direction = endpoint.position - transform.position;
         Physics2D.Raycast(transform.position, direction, new ContactFilter2D(), results, direction.magnitude);
         foreach (RaycastHit2D result in results)
         {
@@ -49,5 +50,10 @@ public class Grounded : MonoBehaviour
         }
         
         return new RaycastHit2D();
+    }
+
+    public bool IsGronudedForJump()
+    {
+        return GetGround(jumpCheckEndpoint).collider != null;
     }
 }

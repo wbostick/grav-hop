@@ -5,26 +5,39 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rigid;
-    bool moveForward = false;
+    Grounded grounded;
+    float moveInput;
+    bool jump = false;
 
-    public float moveForce = 5f;
-    public float maxSpeed = 5f;
+    public float jumpForce = 80f;
+    public float moveForce = 40f;
+    public float maxSpeed = 20f;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        grounded = GetComponent<Grounded>();
     }
 
     void Update()
     {
-        moveForward = Input.GetButton("Forward");
+        moveInput = Input.GetAxisRaw("Horizontal");
+        jump |= Input.GetButtonDown("Jump");
     }
 
     private void FixedUpdate()
     {
-        if (moveForward)
+        rigid.AddForce(moveForce * transform.right * moveInput);
+
+        if (jump)
         {
-            rigid.AddForce(moveForce * transform.right);
+            jump = false;
+            if (grounded.IsGronudedForJump())
+            {
+                Debug.Log("Jumped");
+                rigid.AddForce(jumpForce * transform.up, ForceMode2D.Impulse);
+
+            }
         }
 
         if (rigid.velocity.magnitude >= maxSpeed)
