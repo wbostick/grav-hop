@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class LoadSceneOnButtonPress : MonoBehaviour
 {
-    public string sceneToLoad = "Menu";
     void Start()
     {
-        GetComponent<Button>().onClick.AddListener(() => {SceneManager.LoadScene(sceneToLoad);});
+        GetComponent<Button>().onClick.AddListener(() => {SceneManager.LoadScene(gameObject.name);});
     }
 }

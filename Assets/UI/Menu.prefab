@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b825ce25fbcce34e93f92463aecda4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Level1
 --- !u!114 &4142973591883139134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,12 +162,12 @@ PrefabInstance:
     - target: {fileID: 563088025429702435, guid: e3fa8984a098fc643b42b5bc5a48ce5a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 563088025429702435, guid: e3fa8984a098fc643b42b5bc5a48ce5a,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 563088025429702435, guid: e3fa8984a098fc643b42b5bc5a48ce5a,
         type: 3}
@@ -339,12 +338,12 @@ PrefabInstance:
     - target: {fileID: 563088025429702435, guid: e3fa8984a098fc643b42b5bc5a48ce5a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 563088025429702435, guid: e3fa8984a098fc643b42b5bc5a48ce5a,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 563088025429702435, guid: e3fa8984a098fc643b42b5bc5a48ce5a,
         type: 3}
