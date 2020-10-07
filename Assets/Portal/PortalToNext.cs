@@ -39,7 +39,7 @@ public class PortalToNext : MonoBehaviour
             timer = Time.time - startTime;
         } while (timer < pullDuration);
 
-        int nextScene = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCount;
+        int nextScene = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings;
         SceneManager.LoadScene(nextScene);
     }
 }
