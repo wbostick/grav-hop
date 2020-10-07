@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Grounded : MonoBehaviour
 {
+    public Vector2 gravityDirection;
     float gravityStrength;
     Rigidbody2D rigid;
     public Transform gravityCheckEndpoint;
@@ -11,7 +12,10 @@ public class Grounded : MonoBehaviour
 
     private void Awake()
     {
+        gravityDirection = -transform.up;
         gravityStrength = Physics2D.gravity.magnitude;
+
+        Physics2D.gravity = gravityDirection * gravityStrength;
         rigid = GetComponent<Rigidbody2D>();
     }
 
