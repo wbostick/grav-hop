@@ -131,6 +131,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7543794754713549963}
     m_Modifications:
+    - target: {fileID: 215181964450645230, guid: 2eb3345b019297a4b81a767bbc0ecc20,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264443835087589376, guid: 2eb3345b019297a4b81a767bbc0ecc20,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617073732187683199, guid: 2eb3345b019297a4b81a767bbc0ecc20,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 4402942276709292104, guid: 2eb3345b019297a4b81a767bbc0ecc20,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -159,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 4402942276709292104, guid: 2eb3345b019297a4b81a767bbc0ecc20,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5851561657484987791, guid: 2eb3345b019297a4b81a767bbc0ecc20,
         type: 3}
@@ -170,6 +185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097095180977849238, guid: 2eb3345b019297a4b81a767bbc0ecc20,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7370846549201449606, guid: 2eb3345b019297a4b81a767bbc0ecc20,
         type: 3}
@@ -199,7 +219,7 @@ PrefabInstance:
     - target: {fileID: 7370846549201449606, guid: 2eb3345b019297a4b81a767bbc0ecc20,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 9032441463503631312, guid: 2eb3345b019297a4b81a767bbc0ecc20,
         type: 3}
@@ -394,7 +414,7 @@ PrefabInstance:
     - target: {fileID: 8338491679833553869, guid: f08bc69711a768c48b4975e0bcec19f2,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8338491679833553869, guid: f08bc69711a768c48b4975e0bcec19f2,
         type: 3}

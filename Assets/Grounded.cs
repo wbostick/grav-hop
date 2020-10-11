@@ -7,7 +7,6 @@ public class Grounded : MonoBehaviour
     public Vector2 gravityDirection;
     float gravityStrength;
     Rigidbody2D rigid;
-    public Transform gravityCheckEndpoint;
     public Transform jumpCheckEndpoint;
 
     private void Awake()
