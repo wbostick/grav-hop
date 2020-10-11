@@ -22,7 +22,6 @@ public class Grounded : MonoBehaviour
     {
         Vector2 newestNormal = collsiion.GetContact(collsiion.contactCount - 1).normal.normalized;
         Physics2D.gravity = -newestNormal * gravityStrength;
-        rigid.SetRotation(Quaternion.LookRotation(Vector3.forward, newestNormal));
     }
 
     public RaycastHit2D GetGround(Transform endpoint)
