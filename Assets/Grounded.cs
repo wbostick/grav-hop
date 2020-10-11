@@ -19,25 +19,11 @@ public class Grounded : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
+    private void OnCollisionStay2D(Collision2D collsiion)
     {
-        RotateIfOnGround();
-    }
-
-    bool RotateIfOnGround()
-    {
-        RaycastHit2D hit = GetGround(gravityCheckEndpoint);
-        if (hit.collider)
-        {
-            Physics2D.gravity = -hit.normal.normalized * gravityStrength;
-            rigid.SetRotation(Quaternion.LookRotation(Vector3.forward, hit.normal.normalized));
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-
+        Vector2 newestNormal = collsiion.GetContact(collsiion.contactCount - 1).normal.normalized;
+        Physics2D.gravity = -newestNormal * gravityStrength;
+        rigid.SetRotation(Quaternion.LookRotation(Vector3.forward, newestNormal));
     }
 
     public RaycastHit2D GetGround(Transform endpoint)
@@ -52,7 +38,7 @@ public class Grounded : MonoBehaviour
                 return result;
             }
         }
-        
+
         return new RaycastHit2D();
     }
 
