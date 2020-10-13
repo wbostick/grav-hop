@@ -21,9 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Hazards/Hazard-1.unity
     guid: 1e8e7e24be0c49744a2502a8b90527c4
   - enabled: 1
-    path: Assets/Scenes/Hazards/Hazard-3.unity
-    guid: 20b18b55b1c48cb45883f91f4f3348e9
+    path: Assets/Scenes/Hazards/Hazard-2.unity
+    guid: 069e92f833f04f64f8af3ec82352ced6
   - enabled: 1
     path: Assets/Scenes/Hazards/Hazard-3.unity
-    guid: d2fbc1b9b4e509346bac9f564cb47c14
+    guid: 315deb880ffe8ec4cb50dabe6e947ad4
   m_configObjects: {}
