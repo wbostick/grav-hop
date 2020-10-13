@@ -35,8 +35,39 @@ Transform:
   - {fileID: 4874457103927117146}
   - {fileID: 729137239055526732}
   - {fileID: 2241507651611150931}
+  - {fileID: 2040577794048598370}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5888038354773657665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040577794048598370}
+  m_Layer: 0
+  m_Name: Hazards
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040577794048598370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5888038354773657665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7090640158550137461}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7705336601737356165
 GameObject:
@@ -2721,15 +2752,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa91a252e1ef4a44193e0c4232802cc1, type: 3}
---- !u!4 &8070854017595383542 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1740920278629338577, guid: fa91a252e1ef4a44193e0c4232802cc1,
-    type: 3}
-  m_PrefabInstance: {fileID: 7505692100256027431}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &2425339228751346662 stripped
+--- !u!60 &2506223895802091678 stripped
 PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5296543359102118081, guid: fa91a252e1ef4a44193e0c4232802cc1,
+  m_CorrespondingSourceObject: {fileID: 5399383192477518777, guid: fa91a252e1ef4a44193e0c4232802cc1,
     type: 3}
   m_PrefabInstance: {fileID: 7505692100256027431}
   m_PrefabAsset: {fileID: 0}
@@ -2745,9 +2770,15 @@ PolygonCollider2D:
     type: 3}
   m_PrefabInstance: {fileID: 7505692100256027431}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &2506223895802091678 stripped
+--- !u!4 &8070854017595383542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1740920278629338577, guid: fa91a252e1ef4a44193e0c4232802cc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7505692100256027431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &2425339228751346662 stripped
 PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5399383192477518777, guid: fa91a252e1ef4a44193e0c4232802cc1,
+  m_CorrespondingSourceObject: {fileID: 5296543359102118081, guid: fa91a252e1ef4a44193e0c4232802cc1,
     type: 3}
   m_PrefabInstance: {fileID: 7505692100256027431}
   m_PrefabAsset: {fileID: 0}

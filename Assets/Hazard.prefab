@@ -4772,7 +4772,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.09
+  m_Radius: 1.5
 --- !u!114 &1099163515331841858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4799,6 +4799,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4897129147174137337
 MonoBehaviour:
   m_ObjectHideFlags: 0
