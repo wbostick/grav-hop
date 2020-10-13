@@ -1,0 +1,6 @@
+Iteration I made off of the feedback I got:
+- changed the gravity switching to be more intuitive
+  - was previously changing only when you land and hitting your head would not stick you to the surface
+  - now changes gravity on collision with surface
+- added hazards to give some consequence to actions
+- attempted to make tutorial levels more intuitive
